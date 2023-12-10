@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="index.css"><title>Survey Form</title>
+</head>
+<body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Recommending this website to your friends! :)</p>
+    
+    <form id="survey-form" action="your-server-endpoint.php" method="POST">
+        <label for="name" id="name-label">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+        <label for="email" id="email-label">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+        <label for="number" id="number-label">Number:</label>
+        <input type="number" id="number" name="number" placeholder="Enter a number" min="1" max="100" required>
+
+        <label for="dropdown">Choose an option:</label>
+        <select id="dropdown" name="dropdown">
+            <option value="option1">Option 1</option>
+            <option value="option2">Option 2</option>
+        </select>
+
+        <p>Select an option:</p>
+        <input type="radio" id="option1" name="radio-group" value="option1">
+        <label for="option1">Option 1</label>
+
+        <input type="radio" id="option2" name="radio-group" value="option2">
+        <label for="option2">Option 2</label>
+
+        <p>Select multiple options:</p>
+        <input type="checkbox" id="checkbox1" name="checkbox" value="checkbox1">
+        <label for="checkbox1">Checkbox 1</label>
+
+        <input type="checkbox" id="checkbox2" name="checkbox" value="checkbox2">
+        <label for="checkbox2">Checkbox 2</label>
+
+        <textarea id="comments" name="comments" placeholder="Enter your comments"></textarea>
+
+        <button id="submit" type="submit">Submit</button>
+    </form>
+</body>
+</html>
